@@ -34,6 +34,7 @@
 body {
   font-family: var(--font-default);
   color: var(--color-default);
+  background: url(https://loading.io/background/m-interstellar/);
 }
 
 a {
@@ -2227,7 +2228,7 @@ body {
   font-size: 14px;
   line-height: 28px;
   display: block;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(0, 255, 55, 0.9);
 }
 
 
@@ -2247,7 +2248,7 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 0 0 4px 4px;
   width: 100%;
-  color: white;
+  color:rgba(0, 255, 55, 0.9);
   padding: 18px;
   font-size: 14px;
   outline: none;
@@ -2334,12 +2335,118 @@ body {
   }
 }
 
+:root {
+  --card-height: 300px;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+* {
+  box-sizing: border-box;
+}
+.flagship {
+  width: 100%;
+  height: 80vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+.dcard {
+  width: 50%;
+  height: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 36px;
+  perspective: 2500px;
+  margin: 0 50px;
+}
 
+.cover-image {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
 
+.dwrapper {
+  transition: all 0.5s;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
 
+.dcard:hover .dwrapper {
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
 
+.dwrapper::before,
+.dwrapper::after {
+  content: "";
+  opacity: 0;
+  width: 100%;
+  height: 80px;
+  transition: all 0.5s;
+  position: absolute;
+  left: 0;
+}
+.dwrapper::before {
+  top: 0;
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    transparent 46%,
+    rgba(12, 13, 19, 0.5) 68%,
+    rgba(12, 13, 19) 97%
+  );
+}
+.dwrapper::after {
+  bottom: 0;
+  opacity: 1;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 46%,
+    rgba(12, 13, 19, 0.5) 68%,
+    rgba(12, 13, 19) 97%
+  );
+}
 
+.dcard:hover .dwrapper::before,
+.dwrapper::after {
+  opacity: 1;
+}
 
+.dcard:hover .dwrapper::after {
+  height: 120px;
+}
+.title {
+  width: 100%;
+  transition: transform 0.5s;
+}
+.dcard:hover .title {
+  transform: translate3d(0%, -50px, 100px);
+}
+
+.character {
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  position: absolute;
+  z-index: -1;
+}
+
+.dcard:hover .character {
+  opacity: 1;
+  transform: translate3d(0%, -30%, 100px);
+}
+
+.header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
 
 
 
