@@ -265,7 +265,7 @@ document.addEventListener('DOMContentLoaded', function () {
           case "hello":
           case "hi":
               clearInput();
-              addTextToResults("Hello, it's me... I was wondering if after all these years you'd like to meet... 😍");
+              addTextToResults("Hey there user, Welcome to Crescendo 2023...💫.Type Help for more information ")
               break;
 
           case "time":
