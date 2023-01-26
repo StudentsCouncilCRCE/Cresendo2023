@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementsByTagName('form')[0].onsubmit = function (evt) {
       evt.preventDefault();
       checkWord();
-      window.scrollTo(0, 150);
+      // window.scrollTo(0, 150);
   }
 
   document.getElementById('terminalTextInput').focus();
@@ -243,6 +243,31 @@ document.addEventListener('DOMContentLoaded', function () {
           case "vignesh":
               clearInput();
               addTextToResults("My Creator");
+              break;
+
+          case "ecs":
+              clearInput();
+              addTextToResults("ECS ki mummy meri hojaye ~ Siddharth");
+              break; 
+
+          case "prod":
+              clearInput();
+              addTextToResults("hu ha hu ha we are production");
+              break; 
+
+          case "comps":
+              clearInput();
+              addTextToResults("Let's go COMPS");
+              break;
+              
+          case "mech":
+              clearInput();
+              addTextToResults("Avaaj konacha , mechanical cha");
+              break; 
+
+          case "ivan":
+              clearInput();
+              addTextToResults("The Goat");
               break;
 
           case "i love you":

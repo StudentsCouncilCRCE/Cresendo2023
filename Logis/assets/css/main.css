@@ -61,7 +61,7 @@ h6 {
 --------------------------------------------------------------*/
 section {
   padding: 80px 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .section-header {
@@ -1752,13 +1752,13 @@ section {
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 50vh;
+  height: 100%;
   background-color: var(--color-secondary);
   background-image: url("../img/hero-bg.png");
   background-size: cover;
   background-position: center;
   position: relative;
-  padding: 120px 0 60px 0;
+  padding: 0px 0 0px 0;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -2004,8 +2004,11 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-color: #ecf0f9;
+  background: url(https://videohive.img.customer.envatousercontent.com/files/cd659a91-0619-46ec-8931-b2f3852af236/inline_image_preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=5a52d108430fa765ce860f309c7834c7);
+  /* background: url(https://wallpaperaccess.com/full/6486519.jpg); */
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .content {
@@ -2014,7 +2017,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 1000px;
+  max-width: 1500px;
 }
 
 .heading {
@@ -2056,6 +2059,8 @@ body {
   perspective: 1000px;
   margin: 1rem;
   position: relative;
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(10px);
 }
 @media screen and (max-width: 800px) {
   .card {
@@ -2084,6 +2089,7 @@ body {
   backface-visibility: hidden;
   transform-style: preserve-3d;
   transition: ease-in-out 600ms;
+  backdrop-filter: blur(10px);
 }
 
 .front {
@@ -2094,6 +2100,7 @@ body {
   color: #fff;
   overflow: hidden;
   font-family: Poppins, sans-serif;
+  backdrop-filter: blur(10px);
 }
 .front:before {
   position: absolute;
@@ -2106,6 +2113,7 @@ body {
   background: linear-gradient(135deg, #1a9be6, #1a57e6);
   opacity: 0.25;
   z-index: -1;
+  backdrop-filter: blur(10px);
 }
 .card:hover .front {
   transform: rotateY(180deg);
@@ -2115,7 +2123,7 @@ body {
 }
 
 .back {
-  background: #fff;
+  
   transform: rotateY(-180deg);
   padding: 0 2em;
 }
@@ -2190,14 +2198,20 @@ body {
 
 
 /* terminal */
+.terminal{
+  width: 50%;
+  margin-left: 25%;
+  
+}
 .center {
-  position: absolute;
+  position: relative;
   top: 50%;
   transform: translate(0, -50%);
 }
 
 .terminalCont {
-  background: black;
+  background: transparent;
+  backdrop-filter: blur(10px);
   width: 100%;
   border-radius: 4px;
   padding: 12px 0 0 0;
