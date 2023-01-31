@@ -186,10 +186,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var postHelpList = function () {
       var helpKeyWords = [
-          "- Register + Hackathon / Mechathon / Elexathon (ex. register hackathon)",
-          "- 'Time' will display the current time.",
-          "- 'Date' will display the current date.",
-          "* There are many easter eggs on this terminal, find and tag us on instagram for exciting perks ;)"
+        
+          // "- Register + Hackathon / Mechathon / Elexathon ",
+          // "- 'Time'Live time",
+          // "- 'Date' ",
+          "Welcome User ",
+          "1)What is Crescendo?",
+          "2)Is it an inter-college Event?",
+          "3)Where is the location of the events? ",
+          "4)When is the Event?",
+          "5)Are the Events Paid?",
+          "6)where to register",
+          "7)Will it be fun?",
+          "* There are many easter eggs on this terminal, find and tag and follow us on instagram  ;",
       ].join('<br>');
       addTextToResults(helpKeyWords);
   }
@@ -229,6 +238,68 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var textReplies = function () {
       switch (textInputValueLowerCase) {
+
+        case "1":
+              clearInput();
+              addTextToResults("It is the Annual Technical Event FR.CRCE");
+              break;
+
+
+              case "2":
+              clearInput();
+              addTextToResults("Yes,We Do appreciate inter college Participation ");
+              break;
+
+
+              case "3":
+              clearInput();
+              addTextToResults("In the College,Location is given in the google maps below ");
+              break;
+
+
+
+
+              case "4":
+              clearInput();
+              addTextToResults("It is a 3 day event,from 9-12 March");
+              break;
+
+
+
+
+              case "5":
+              clearInput();
+              addTextToResults("Yes ,they have nominal charges");
+              break;
+
+              case "6":
+                clearInput();
+                addTextToResults("Right here on the website");
+                break;
+
+
+              case "7":
+              clearInput();
+              addTextToResults(" Offcourse");
+              break;
+
+
+
+
+              case "tanuj":
+              clearInput();
+              addTextToResults("R@di ka bacha");
+              break;
+
+
+              case "farhan":
+              clearInput();
+              addTextToResults(" Offcourse");
+              break;
+
+
+
+  
           case "about":
               clearInput();
               addTextToResults("Crescendo 2023!");
@@ -237,12 +308,12 @@ document.addEventListener('DOMContentLoaded', function () {
           case "chris":
           case "chris gracias":
               clearInput();
-              addTextToResults("My Creator");
+              addTextToResults("Webmaster op");
               break;
 
           case "vignesh":
               clearInput();
-              addTextToResults("My Creator");
+              addTextToResults("Webmaster op");
               break;
 
           case "ecs":
@@ -259,11 +330,33 @@ document.addEventListener('DOMContentLoaded', function () {
               clearInput();
               addTextToResults("Let's go COMPS");
               break;
+
+              case "dates":
+              clearInput();
+              addTextToResults("9th March - 13th March");
+              break;
+
+             
               
           case "mech":
               clearInput();
               addTextToResults("Avaaj konacha , mechanical cha");
               break; 
+
+              case "elexathon":
+                clearInput();
+                addTextToResults(" Visit the Event card");
+                break;
+
+                case "mechathon":
+              clearInput();
+              addTextToResults(" Visit the Event card");
+              break;
+
+              case "hackathon":
+              clearInput();
+              addTextToResults(" Visit the Event card ");
+              break;
 
           case "ivan":
               clearInput();
@@ -290,7 +383,7 @@ document.addEventListener('DOMContentLoaded', function () {
           case "hello":
           case "hi":
               clearInput();
-              addTextToResults("Hey there user, Welcome to Crescendo 2023...💫.Type Help for more information ")
+              addTextToResults("Hey there user, Welcome to Crescendo 2023...💫.Type Help for more information  ")
               break;
 
           case "time":
@@ -315,9 +408,10 @@ document.addEventListener('DOMContentLoaded', function () {
               addTextToResults("STUCO ROCKS !!");
               break;
 
+              
           default:
               clearInput();
-              addTextToResults("<p><i>The command " + "<b>" + textInputValue + "</b>" + " was not found. Type <b>Help</b> to see all commands.</i></p>");
+              addTextToResults("<p><i>The command  " + "<b>" + textInputValue + "</b>" + " was not found . Type <b>Help</b> to see all commands.</i></p>");
               break;
       }
   }
@@ -340,6 +434,52 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
+
+
+
+// Set up the scene
+var scene = new THREE.Scene();
+var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+var renderer = new THREE.WebGLRenderer();
+renderer.setSize( window.innerWidth, window.innerHeight );
+document.body.appendChild( renderer.domElement );
+
+// Create the kaleidoscope geometry
+var geometry = new THREE.TorusKnotGeometry( 10, 3, 100, 16 );
+
+
+// Create a material to give the kaleidoscope a reflective surface
+var material = new THREE.MeshStandardMaterial( {
+    color: 0xff0051, 
+    metalness: 1, 
+    roughness: 0
+} );
+
+// Create the kaleidoscope mesh and add it to the scene
+var mesh = new THREE.Mesh( geometry, material );
+scene.add( mesh );
+
+// Add a light to the scene
+var light = new THREE.DirectionalLight( 0xffffff, 1 );
+light.position.set( 1, 1, 1 );
+scene.add( light );
+
+// Create a kaleidoscope effect by duplicating the mesh and reflecting it across the x and y axes
+var kaleidoscope = new THREE.Group();
+for (var i = 0; i < 4; i++) {
+    var reflectedMesh = mesh.clone();
+    reflectedMesh.position.x = (i % 2 === 0) ? -mesh.position.x : mesh.position.x;
+    reflectedMesh.position.y = (i < 2) ? -mesh.position.y : mesh.position.y;
+    kaleidoscope.add(reflectedMesh);
+}
+scene.add(kaleidoscope);
+
+// Set the camera position
+camera.position.z = 30;
+
+// Render the scene
+renderer.render( scene, camera );
 
 
 
