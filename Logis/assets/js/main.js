@@ -261,7 +261,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
               case "4":
               clearInput();
-              addTextToResults("It is a 3 day event,from 9-12 March");
+              addTextToResults("It is a 4 day event,from 9-12 March");
               break;
 
 
