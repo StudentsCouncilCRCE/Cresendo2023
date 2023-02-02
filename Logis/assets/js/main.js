@@ -408,6 +408,21 @@ document.addEventListener('DOMContentLoaded', function () {
               addTextToResults("STUCO ROCKS !!");
               break;
 
+
+              case "ishan":
+             
+                    clearInput();
+                    addTextToResults(" Hello");
+                    break;
+
+
+                    case "RYAN":
+              
+                    clearInput();
+                    addTextToResults("GOAT ULTRA PRO MAX 🐐");
+                    break;
+
+
               
           default:
               clearInput();

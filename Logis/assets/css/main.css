@@ -1566,14 +1566,14 @@ section {
   font-size: 20px;
   background: var(--color-primary);
   color: #fff;
-  width: 44px;
+  width: 127PX;
   height: 44px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
-  margin-right: 15px;
+  margin-right: 15px; 
 }
 
 .contact .info-item h4 {
@@ -1856,6 +1856,7 @@ section {
   background-color: var(--color-secondary);
   padding: 50px 0;
   color: white;
+  margin-bottom: -88%;
 }
 
 .footer .footer-info .logo {
