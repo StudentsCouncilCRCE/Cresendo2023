@@ -2727,7 +2727,7 @@ body {
   }
   .row{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column-reverse; 
    }
    .rev{
     flex-direction: column;
@@ -2745,6 +2745,13 @@ body {
    }
    .bl{
     border: 0px solid blue;
+   }
+   .terminal{
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
    }
  }
 
@@ -2769,11 +2776,11 @@ body {
  }
 
 
- .btn
+ .btns
  {
      width: 100px;
      height: 100px;
-     background-color: #fafafa;
+     background-color: #fafafa00;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -2803,34 +2810,34 @@ body {
  #yt
  {
      color: #cc1d1d;
-     text-shadow: 0 0 30px #d11104;
+     text-shadow: 0 0 30px #ff1100;
  }
- .btn.fb-btn
+ .btns.fb-btn
  {
      box-shadow: 0 20px 20px -17px rgba(0,111,255,0.53);
  }
- .btn.fb-btn:hover
+ .btns.fb-btn:hover
  {
      transform: scale(1.2);
      box-shadow: 0 30px 45px -15px rgba(0,111,255,0.65);
  }
- .btn.ig-btn
+ .btns.ig-btn
  {
      box-shadow: 0 20px 20px -17px rgba(255,16,39,0.5);
  }
- .btn.ig-btn:hover
+ .btns.ig-btn:hover
  {
      transform: scale(1.2);
      box-shadow: 0 30px 45px -15px rgba(255,16,39,0.57);
  }
- .btn.tw-btn
+ .btns.tw-btn
  {
-     box-shadow: 0 20px 20px -17px rgba(0,255,255,0.53);
+     color: red;
+     box-shadow: 0 20px 20px -17px rgb(255, 0, 0);
  }
- .btn.tw-btn:hover
+ .btns.tw-btn:hover
  {
      transform: scale(1.2);
      box-shadow: 0 30px 45px -15px rgba(255, 0, 0, 0.6);
  }
 
- 
