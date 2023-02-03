@@ -278,33 +278,14 @@ document.addEventListener('DOMContentLoaded', function () {
         break;
 
 
-<<<<<<< Updated upstream
-      case "7":
-        clearInput();
-        addTextToResults(" Offcourse");
-        break;
-=======
               case "7":
               clearInput();
               addTextToResults(" Ofcourse");
               break;
->>>>>>> Stashed changes
 
 
 
 
-<<<<<<< Updated upstream
-      case "tanuj":
-        clearInput();
-        addTextToResults("R@di ka bacha");
-        break;
-
-
-      case "farhan":
-        clearInput();
-        addTextToResults(" Offcourse");
-        break;
-=======
               case "tanuj":
               case "Tanuj":
               clearInput();
@@ -317,23 +298,15 @@ document.addEventListener('DOMContentLoaded', function () {
               clearInput();
               addTextToResults("Tuta hua saaz hu mein");
               break;
->>>>>>> Stashed changes
 
 
 
 
-<<<<<<< Updated upstream
-      case "about":
-        clearInput();
-        addTextToResults("Crescendo 2023!");
-        break;
-=======
-          case "chris":
-          case "chris gracias":
+          case "vignesh":
+          case "Vignesh":
               clearInput();
-              addTextToResults("SE Webmaster");
+              addTextToResults("Webmaster OP");
               break;
->>>>>>> Stashed changes
 
       case "chris":
       case "chris gracias":
@@ -341,18 +314,11 @@ document.addEventListener('DOMContentLoaded', function () {
         addTextToResults("Webmaster op");
         break;
 
-<<<<<<< Updated upstream
-      case "vignesh":
-        clearInput();
-        addTextToResults("Webmaster op");
-        break;
-=======
           case "Siddharth":
           case "siddharth":
               clearInput();
               addTextToResults("ECS ki mummy meri hojaye");
               break; 
->>>>>>> Stashed changes
 
       case "ecs":
         clearInput();
@@ -381,7 +347,6 @@ document.addEventListener('DOMContentLoaded', function () {
         addTextToResults("Avaaj konacha , mechanical cha");
         break;
 
-<<<<<<< Updated upstream
       case "elexathon":
         clearInput();
         addTextToResults(" Visit the Event card");
@@ -477,80 +442,6 @@ document.addEventListener('DOMContentLoaded', function () {
         addTextToResults("<p><i>The command  " + "<b>" + textInputValue + "</b>" + " was not found . Type <b>Help</b> to see all commands.</i></p>");
         break;
     }
-=======
-          case "ivan":
-              clearInput();
-              addTextToResults("The Goat");
-              break;
-
-          case "i love you":
-          case "love you":
-          case "love":
-              clearInput();
-              addTextToResults("Aww! That's so sweet 😍. Here's some love for you too ❤ ❤ ❤ !");
-              break;
-
-          case "rick":
-          case "rick roll":
-          case "rickroll":
-          case "do me a rickroll":
-          case "fuck you":
-              clearInput();
-              addTextToResults(':)');
-              openLinkInNewWindow('https://youtu.be/dQw4w9WgXcQ');
-              break;
-
-          case "hello":
-          case "hi":
-              clearInput();
-              addTextToResults("Hey there user, Welcome to Crescendo 2023...💫.Type Help for more information  ")
-              break;
-
-          case "time":
-              clearInput();
-              getTimeAndDate("time");
-              break;
-
-          case "date":
-              clearInput();
-              getTimeAndDate("date");
-              break;
-
-          case "help":
-          case "?":
-              clearInput();
-              postHelpList();
-              break;
-
-          case "stuco rocks":
-          case "stuco":
-              clearInput();
-              addTextToResults("STUCO ROCKS !!");
-              break;
-
-
-              case "ishan":
-             
-                    clearInput();
-                    addTextToResults(" Hello");
-                    break;
-
-
-          case "RYAN":
-          case "Ryan":
-          case "ryan":
-              clearInput();
-              addTextToResults("GOAT ULTRA PRO MAX 🐐");
-              break;
-
-
-              
-          default:
-              clearInput();
-              addTextToResults("<p><i>The command  " + "<b>" + textInputValue + "</b>" + " was not found . Type <b>Help</b> to see all commands.</i></p>");
-              break;
-      }
->>>>>>> Stashed changes
   }
 
   var checkWord = function () {
