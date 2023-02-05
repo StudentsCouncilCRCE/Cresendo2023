@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // window.scrollTo(0, 150);
   }
 
-  document.getElementById('terminalTextInput').focus();
+  // document.getElementById('terminalTextInput').focus();
 
   var textInputValue = document.getElementById('terminalTextInput').value.trim();
 
