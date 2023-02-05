@@ -323,7 +323,7 @@ document.addEventListener('DOMContentLoaded', function () {
       case "chris":
       case "chris gracias":
         clearInput();
-        addTextToResults("Webmaster op");
+        addTextToResults(" SE Webmaster op");
         break;
 
           case "Siddharth":
@@ -345,6 +345,11 @@ document.addEventListener('DOMContentLoaded', function () {
       case "comps":
         clearInput();
         addTextToResults("Let's go COMPS");
+        break;
+
+      case "aids":
+        clearInput();
+        addTextToResults("Let's go AI");
         break;
 
       case "dates":
@@ -441,7 +446,7 @@ document.addEventListener('DOMContentLoaded', function () {
       case "ishan":
 
         clearInput();
-        addTextToResults(" Hello");
+        addTextToResults("Lendi");
         break;
 
 
