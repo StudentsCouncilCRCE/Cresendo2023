@@ -10,8 +10,8 @@
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 --------------------------------------------------------------*/
 /* Fonts */
-/* @import url(//db.onlinewebfonts.com/c/8cdbb48678e4418f22a2f507c2b975bd?family=Blanka);
-@font-face {font-family: "Blanka"; src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot"); src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff") format("woff"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.svg#Blanka") format("svg"); } */
+@import url(//db.onlinewebfonts.com/c/8cdbb48678e4418f22a2f507c2b975bd?family=Blanka);
+@font-face {font-family: "Blanka"; src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot"); src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff") format("woff"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.svg#Blanka") format("svg"); }
 /* @import url(//db.onlinewebfonts.com/c/9c6dbf46e0678b08c7288008c8df8691?family=Corrupted+File); */
 /* @font-face {font-family: "Corrupted File"; src: url("//db.onlinewebfonts.com/t/9c6dbf46e0678b08c7288008c8df8691.eot"); src: url("//db.onlinewebfonts.com/t/9c6dbf46e0678b08c7288008c8df8691.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9c6dbf46e0678b08c7288008c8df8691.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9c6dbf46e0678b08c7288008c8df8691.woff") format("woff"), url("//db.onlinewebfonts.com/t/9c6dbf46e0678b08c7288008c8df8691.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9c6dbf46e0678b08c7288008c8df8691.svg#Corrupted File") format("svg"); } */
 /* @import url(//db.onlinewebfonts.com/c/213b270879c39c60dab01a4bf5b51ba0?family=Distorter+Demo); */
@@ -22,7 +22,7 @@
   --font-primary: "Inter", sans-serif;
   --font-secondary: "Poppins", sans-serif;
 }
-
+b
 /* Colors */
 :root {
   --color-default: #0a0d13;
@@ -34,12 +34,14 @@
 :root {
   scroll-behavior: smooth;
 }
-
+#header h1{
+  font-family: "Blanka",sans-serif;
+}
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: var(--font-default);
+  font-family: 'Space Grotesk', sans-serif;
   color: white;
   /* font-family: "Blanka", sans-serif; */
   
@@ -211,7 +213,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: var(--color-primary);
+  background: #004aad;
   color: white;
   width: 40px;
   height: 40px;
@@ -1802,7 +1804,7 @@ section {
   border-radius: 10px;
 }
 
-.hero form .form-control {
+/* .hero form .form-control {
   padding-top: 18px;
   padding-bottom: 18px;
   padding-left: 20px;
@@ -1811,13 +1813,13 @@ section {
   margin-right: 10px;
   border: none !important;
   background: none !important;
-}
+} */
 
-.hero form .form-control:hover,
+/* .hero form .form-control:hover,
 .hero form .form-control:focus {
   outline: none;
   box-shadow: none;
-}
+} */
 
 .hero form .btn-primary {
   background-color: var(--color-primary);
@@ -2002,8 +2004,26 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  
+}
+::-webkit-scrollbar {
+  width: 10px;
 }
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #004aad;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #002e69;
+}
 .content {
   display: flex;
   margin: 0 auto;
@@ -2103,7 +2123,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, #1a9be6, #1a57e6);
+  /* background: linear-gradient(135deg, #1a9be6, #1a57e6); */
   opacity: 0.25;
   z-index: -1;
   backdrop-filter: blur(10px);
@@ -2498,6 +2518,8 @@ body {
    padding-top: 50px;
  }
  .glitch {
+  font-family: 'Space Grotesk', sans-serif;
+
    font-size: 50px;
    font-weight: 700;
    text-transform: uppercase;
@@ -2668,6 +2690,7 @@ img {
    .head{
     font-size: 40px;
    }
+   
  }
 
 
@@ -2909,10 +2932,58 @@ div.arrow_box img {
   border: 0;
 }
 
-.form-control {
-  margin: 15px;
+.custom-form .form-control{
+  /* margin: 15px; */
+  border-radius: 30px;
+  padding-bottom: 13px;
+  padding-top: 13px;
+  margin-bottom: 24px;
+  padding-left: 20px;
 }
 
+.custom-form button[type="submit"] {
+  background: var(#004aad);
+    border: none;
+    border-radius: 100px;
+    color: var(--white-color);
+    font-size: var(--p-font-size);
+    font-weight: var(--font-weight-medium);
+    transition: all 0.3s;
+    margin-bottom: 0;
+    padding: 15px;
+}
+.nav-link{
+  padding-top: 20px;
+}
+.nav-link.active{
+  color: blue;
+}
+.nav-link{
+  color: blue;
+}
+.nav-tabs{
+  color: black;
+background-color: #f0f8ff;
+    border-radius: 100px;
+    border-bottom: 0;
+    padding: 15px;
+}
+.nav-tabs .nav-link{
+  color: grey;
+  border-radius: 100px;
+}
+.tab-content{
+  margin-top: 50px;
+}
+.nav-tabs .nav-link:hover{
+  color: blue;
+  background-color: white;
+  border-color: var(--bs-nav-tabs-link-active-border-color);
+  border-radius: 100px;
+}
+.nav-tabs .nav-link.active{
+  color: blue;
+}
 
 .stucoani {
 	text-transform: uppercase;
@@ -2955,10 +3026,32 @@ div.arrow_box img {
 
   }
 
-
 /* Animate Background Image */
 
 @-webkit-keyframes aitf {
 	0% { background-position: 0% 50%; }
 	100% { background-position: 100% 50%; }
+}
+@media (max-width: 480px){
+  .stucoani{
+    font-size: 10px;
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #004aad;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #002e69;
+  }
 }
