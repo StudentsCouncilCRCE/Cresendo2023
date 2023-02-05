@@ -10,9 +10,11 @@
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 --------------------------------------------------------------*/
 /* Fonts */
-@import url(//db.onlinewebfonts.com/c/8cdbb48678e4418f22a2f507c2b975bd?family=Blanka);
-@font-face {font-family: "Blanka"; src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot"); src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff") format("woff"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.svg#Blanka") format("svg"); }
-
+/* @import url(//db.onlinewebfonts.com/c/8cdbb48678e4418f22a2f507c2b975bd?family=Blanka);
+@font-face {font-family: "Blanka"; src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot"); src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff") format("woff"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.svg#Blanka") format("svg"); } */
+/* @import url(//db.onlinewebfonts.com/c/9c6dbf46e0678b08c7288008c8df8691?family=Corrupted+File); */
+/* @font-face {font-family: "Corrupted File"; src: url("//db.onlinewebfonts.com/t/9c6dbf46e0678b08c7288008c8df8691.eot"); src: url("//db.onlinewebfonts.com/t/9c6dbf46e0678b08c7288008c8df8691.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9c6dbf46e0678b08c7288008c8df8691.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9c6dbf46e0678b08c7288008c8df8691.woff") format("woff"), url("//db.onlinewebfonts.com/t/9c6dbf46e0678b08c7288008c8df8691.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9c6dbf46e0678b08c7288008c8df8691.svg#Corrupted File") format("svg"); } */
+/* @import url(//db.onlinewebfonts.com/c/213b270879c39c60dab01a4bf5b51ba0?family=Distorter+Demo); */
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Inter", sans-serif;
@@ -37,7 +39,7 @@
 body {
   font-family: var(--font-default);
   color: white;
-  font-family: "Blanka", sans-serif;
+  /* font-family: "Blanka", sans-serif; */
   
   
 }
@@ -214,7 +216,7 @@ section {
   transition: all 0.4s;
 }
 
-.scroll-top i {
+.scroll-top i{
   font-size: 24px;
   color: #fff;
   line-height: 0;
@@ -1868,8 +1870,8 @@ section {
 --------------------------------------------------------------*/
 .footer {
   font-size: 14px;
-  background-color: var(--color-secondary);
-  padding: 50px 0;
+  background-color: black;
+  /* padding: 50px 0; */
   color: white;
   margin-bottom: -88%;
 }
@@ -2480,80 +2482,7 @@ body {
 
 
 
-.glitch {
-  font-size: 5rem;
-  padding: 0px;
-  margin: 0px;
-  font-weight: 700;
-  text-transform: uppercase;
-  position: relative;
-  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
-    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
-    0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
 
-  animation: glitch 500ms infinite;
-
-}
-
-.glitch span {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.glitch span:first-child {
-  animation: glitch 650ms infinite;
-  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
-  transform: translate(-0.025em, -0.0125em);
-  /* color: green; */
-  opacity: 0.8;
-}
-
-.glitch span:last-child {
-  animation: glitch 375ms infinite;
-  clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
-  transform: translate(0.0125em, 0.025em);
-  /* color: red; */
-  opacity: 0.8;
-}
-
-/* https://web.dev/prefers-reduced-motion/#(bonus)-forcing-reduced-motion-on-all-websites */
-
-@keyframes glitch {
-  0% {
-    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
-      -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
-      -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
-  }
-  14% {
-    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
-      -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
-      -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
-  }
-  15% {
-    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
-      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
-      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
-  }
-  49% {
-    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
-      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
-      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
-  }
-  50% {
-    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
-      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
-  }
-  99% {
-    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
-      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
-  }
-  100% {
-    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
-      -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
-      -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
-  }
-}
 
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -2616,6 +2545,10 @@ body {
      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
  
    animation: glitch 500ms infinite;
+ }
+ .head{
+  font-size: 75px;
+
  }
  
  .glitch span {
@@ -2726,6 +2659,13 @@ body {
  }
  .bl{
   border: 2px solid blue;
+
+ }
+ .yl{
+  border: 2px solid yellow;
+ }
+ .aq{
+  border: 2px solid aqua;
  }
  @media (max-width: 480px){
   .ultimate{
@@ -2753,12 +2693,21 @@ body {
    .bl{
     border: 0px solid blue;
    }
+   .yl{
+    border: 0px solid yellow;
+   }
+   .aq{
+    border: 0px solid aqua;
+   }
    .terminal{
     width: 100%;
     margin-left: 0px;
     padding-left: 30px;
     padding-right: 30px;
     
+   }
+   .head{
+    font-size: 40px;
    }
  }
 
@@ -2806,17 +2755,17 @@ body {
 
  #fb
  {
-     color: #006fff;
+     color: lightblue;
      text-shadow: 0 0 30px #006fff;
  }
  #ig
  {
-     color: #ff5f40;
+     color: pink;
      text-shadow: 0 0 30px #d62400;
  }
  #yt
  {
-     color: #cc1d1d;
+     color: red;
      text-shadow: 0 0 30px #ff1100;
  }
  .btns.fb-btn
@@ -2862,7 +2811,7 @@ body{
  
 }
 h2.text_shadows{
-  font-family: "Blanka", sans-serif;
+  font-family: "Distorter", sans-serif;
 }
 .text_shadows {
  
@@ -3016,4 +2965,53 @@ div.arrow_box img{
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+.stucoani {
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	display: inline-block;
+	border: 4px double rgba(255,255,255,.25);
+	border-width: 4px 0;
+	padding: 1.5em 0em;
+	position: relative;
+	top: 18%;
+	left: 50%;
+	width: 40em;
+	margin: 0 0 0 -20em;
+  text-align: center;
+}
+  .animate {
+
+  	font: 700 5em/1 "Oswald", sans-serif;
+  	letter-spacing: 0;
+  	padding: .25em 0 .325em;
+	  display: block;
+	  margin: 0 auto;
+  	text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Clip Background Image */
+
+	  background: url(../img/Cres\ Flow\ -\ 1\ -\ Edited.png) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+
+/* Animate Background Image */
+
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	  -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+
+  }
+
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
 }
