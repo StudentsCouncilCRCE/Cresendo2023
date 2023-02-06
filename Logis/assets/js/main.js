@@ -21,13 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  const preloader = document.querySelector ('#preloader');
+  const preloader = document.querySelector('#preloader');
   if (preloader) {
     window.addEventListener('load', () => {
       preloader.remove();
     });
   }
-
 
   /**
    * Sticky header on scroll
@@ -301,7 +300,7 @@ document.addEventListener('DOMContentLoaded', function () {
               case "tanuj":
               case "Tanuj":
               clearInput();
-              addTextToResults("R@di ka bacha");
+              addTextToResults(" if girl==true  contact :7700007543 else contact type renu ");
               break;
 
 
@@ -334,7 +333,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       case "ecs":
         clearInput();
-        addTextToResults("ECS ki mummy meri hojaye ~ Siddharth");
+        addTextToResults(" Goooo ECS");
         break;
 
       case "prod":
@@ -405,7 +404,7 @@ document.addEventListener('DOMContentLoaded', function () {
       case "rick roll":
       case "rickroll":
       case "do me a rickroll":
-      case "fuck you":
+      
         clearInput();
         addTextToResults(':)');
         openLinkInNewWindow('https://youtu.be/dQw4w9WgXcQ');
@@ -413,6 +412,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       case "hello":
       case "hi":
+
         clearInput();
         addTextToResults("Hey there user, Welcome to Crescendo 2023...💫.Type Help for more information  ")
         break;
@@ -450,8 +450,11 @@ document.addEventListener('DOMContentLoaded', function () {
         break;
 
 
-
-
+ 
+  case "fuck you":
+  clearInput();
+        addTextToResults(" JO BOLTE WAHI HOTE");
+        break;
 
 
       default:

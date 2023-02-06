@@ -245,8 +245,15 @@ section {
   background: url("/Logis/assets/img/CRESCENDO\ PRELOADER.gif") center #fff;
   background-repeat: no-repeat;
   transition: all 0.6s ease-out;
-  width: max-content;
 }
+
+
+
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # Preloader
@@ -315,6 +322,14 @@ section {
     opacity: 0;
   }
 } */
+
+
+
+@media only screen and (max-width: 600px) {
+  #preloader {
+    background: url("/Logis/assets/img/CRESCENDO\ PRELOADER.gif") center #fff ; 
+  }
+}
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
