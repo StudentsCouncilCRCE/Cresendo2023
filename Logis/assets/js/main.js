@@ -202,14 +202,14 @@ document.addEventListener('DOMContentLoaded', function () {
       // "- 'Time'Live time",
       // "- 'Date' ",
       "Welcome User ",
-      "1)What is Crescendo?",
-      "2)Is it an inter-college Event?",
-      "3)Where is the location of the events? ",
-      "4)When is the Event?",
-      "5)Are the Events Paid?",
-      "6)where to register",
-      "7)Will it be fun?",
-      "* There are many easter eggs on this terminal, find and tag and follow us on instagram  ;",
+      "1) What is Crescendo?",
+      "2) Is it an inter-college Event?",
+      "3) What is the location of the events? ",
+      "4) When is Crescendo?",
+      "5) Are the Events Paid?",
+      "6) Where to register?",
+      "7) Will it be fun?",
+      "* There are many easter eggs on this terminal, find,tag and follow us on Instagram at @frcrce_official ;",
     ].join('<br>');
     addTextToResults(helpKeyWords);
   }
@@ -252,19 +252,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
       case "1":
         clearInput();
-        addTextToResults("It is the Annual Technical Event FR.CRCE");
+        addTextToResults("Crescendo is the annual technical festival of Fr. Conceicao Rodrigues College of Engineering. It is an inter college event with events ranging from Hackathon, Mechathon, Elexathon to Coding Competitions, Entrepreneurship, etc.");
+
         break;
 
 
       case "2":
         clearInput();
-        addTextToResults("Yes,We Do appreciate inter college Participation ");
+        addTextToResults("Yes, Crescendo is an inter-collegiate event....Get your friends along! ");
         break;
 
 
       case "3":
         clearInput();
-        addTextToResults("In the College,Location is given in the google maps below ");
+        addTextToResults("Different events have different venues, you will be notified about your venues in the event brochure!");
         break;
 
 
@@ -272,7 +273,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       case "4":
         clearInput();
-        addTextToResults("It is a 4 day event,from 9-12 March");
+        addTextToResults("The Technical Amalgamation - CRESCENDO is spanned over 4 days, 9th March to 12th March");
         break;
 
 
@@ -280,18 +281,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
       case "5":
         clearInput();
-        addTextToResults("Yes ,they have nominal charges");
+        addTextToResults("Yes, the events do have a registeration fee of nominal cost");
         break;
 
       case "6":
         clearInput();
-        addTextToResults("Right here on the website");
+        addTextToResults("Register for any event right here on the amazing website :)");
         break;
 
 
               case "7":
               clearInput();
-              addTextToResults(" Ofcourse");
+              addTextToResults(" Come along with your Kaleidoscopes and watch out for yourselves!");
               break;
 
 
@@ -446,7 +447,7 @@ document.addEventListener('DOMContentLoaded', function () {
       case "ishan":
 
         clearInput();
-        addTextToResults("Lendi");
+        addTextToResults("hello");
         break;
 
 

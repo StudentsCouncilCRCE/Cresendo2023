@@ -21,6 +21,8 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Inter", sans-serif;
   --font-secondary: "Poppins", sans-serif;
+  --card3-height: 300px;
+  --card3-width: calc(var(--card3-height) / 1.5);
 }
 b
 /* Colors */
@@ -214,6 +216,7 @@ section {
   background: #004aad;
   color: white;
   width: 40px;
+
   height: 40px;
   border-radius: 4px;
   transition: all 0.4s;
@@ -1607,6 +1610,9 @@ section {
 .contact .info-item + .info-item {
   margin-top: 40px;
 }
+.contact-form-body{
+  padding-bottom: 20px;
+}
 
 .contact .info-item i {
   font-size: 20px;
@@ -1799,7 +1805,7 @@ section {
   width: 100%;
   height: 100%;
   background-color: var(--color-secondary);
-  background-image: url("../img/hero-bg.png");
+  /* background-image: url("../img/hero-bg.png"); */
   background-size: cover;
   background-position: center;
   position: relative;
@@ -2028,11 +2034,20 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: url(/Logis/assets/img/Crescendo\ bg.png);
+  /* background: url(/Logis/assets/img/Crescendo\ bg.png); */
+  /* background: url(https://cdnb.artstation.com/p/assets/covers/images/006/950/233/large/arturo-james-ice-planet-3-arturo-james.jpg?1502486660); */
+  /* background: url(https://e0.pxfuel.com/wallpapers/388/917/desktop-wallpaper-broken-glass-all-superior-broken-glass-background-blue-glass.jpg); */
   /* background: url(https://wallpaperaccess.com/full/6486519.jpg); */
+  /* background: url(https://w0.peakpx.com/wallpaper/788/568/HD-wallpaper-cracked-abstract-blue-broken-glass-phone-screen-thumbnail.jpg); */
+  /* background: url(https://images.unsplash.com/photo-1542661206-03e9001692de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NHx8fGVufDB8fHx8&w=1000&q=80); */
+  /* background: url(https://wallpapers-hub.art/wallpaper-images/695406.jpg); */
+  /* background: url(/Logis/assets/img/Crescendo\ bg.png); */
+  background: url(/Logis/assets/img/bg\ crescdo.png);
   background-attachment: fixed;
+  /* background-position:bottom; */
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   
 }
 ::-webkit-scrollbar {
@@ -2385,10 +2400,7 @@ body {
   }
 }
 
-:root {
-  --card-height: 300px;
-  --card-width: calc(var(--card-height) / 1.5);
-}
+
 * {
   box-sizing: border-box;
 }
@@ -2558,6 +2570,10 @@ body {
  }
  .head{
   font-size: 75px;
+  
+}
+.pad{
+  padding-bottom: 40px;
 }
 
 .glitch span {
@@ -2711,6 +2727,7 @@ img {
   }
   .head {
     font-size: 40px;
+    
    }
    
  }
@@ -2998,8 +3015,10 @@ background-color: #f0f8ff;
 }
 
 .stucoani {
+  
   text-transform: uppercase;
   letter-spacing: 0.5em;
+  font-size: 20px;
   display: inline-block;
   border: 4px double rgba(255, 255, 255, 0.25);
   border-width: 4px 0;
@@ -3010,6 +3029,7 @@ background-color: #f0f8ff;
   width: 40em;
   margin: 0 0 0 -20em;
   text-align: center;
+  /* margin-top: 50px; */
 }
 .animate {
   font: 700 5em/1 "Oswald", sans-serif;
@@ -3064,4 +3084,135 @@ background-color: #f0f8ff;
   ::-webkit-scrollbar-thumb:hover {
     background: #002e69;
   }
+}
+
+#cards3d {
+  width: 100%;
+  /* height: 100vh; */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: #191c29; */
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+.card3 {
+  width: 290px;
+  height: var(--card3-height);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 36px;
+  perspective: 2500px;
+  margin: 0 50px;
+  backdrop-filter: blur(10px);
+}
+
+.cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.wrapper {
+  transition: all 0.5s;
+  position: absolute;
+  width: 100%;
+  border-radius: 50px;
+  z-index: -1;
+}
+
+.card3:hover .wrapper {
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+
+.wrapper::before,
+.wrapper::after {
+  content: "";
+  opacity: 0;
+  width: 100%;
+  height: 80px;
+  transition: all 0.5s;
+  position: absolute;
+  left: 0;
+  border-radius: 50px;
+}
+.wrapper::before {
+  top: 0;
+  height: 100%;
+  border-radius: 50px;
+  background-image: linear-gradient(
+    to top,
+    transparent 46%,
+    rgba(12, 13, 19, 0.5) 68%,
+    rgba(12, 13, 19) 97%
+  );
+}
+.wrapper::after {
+  bottom: 0;
+  opacity: 1;
+  border-radius: 50px;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 46%,
+    rgba(12, 13, 19, 0.5) 68%,
+    rgba(12, 13, 19) 97%
+  );
+}
+
+.card3:hover .wrapper::before,
+.wrapper::after {
+  opacity: 1;
+  border-radius: 50px;
+}
+
+.card3:hover .wrapper::after {
+  height: 120px;
+  border-radius: 50px;
+}
+.title3 {
+  width: 100%;
+  transition: transform 0.5s;
+  border-radius: 50px;
+}
+.card3:hover .title3 {
+  transform: translate3d(0%, -50px, 100px);
+  border-radius: 50px;
+}
+
+.character {
+  width: 100%;
+  height: 120%;
+  opacity: 0;
+  transition: all 0.5s;
+  position: absolute;
+  z-index: -1;
+}
+
+.card3:hover .character {
+  opacity: 1;
+  transform: translate3d(0%, -30%, 100px);
+}
+
+
+
+@media (max-width: 480px) {
+  #cards3d{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    padding-top: 0px;
+  }
+  .card3{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 250px;
+  }
+ 
 }
