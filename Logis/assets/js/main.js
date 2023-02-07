@@ -381,13 +381,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
       case "ivan":
         clearInput();
-        addTextToResults("GOAT");
+        addTextToResults("G.O.A.T");
         break;
 
 
       case "ryan":
         clearInput();
-        addTextToResults("GOAT ULTRA PRO MAX ");
+        addTextToResults("G.O.A.T ULTRA PRO MAX 🐐 ");
         break;
 
 
@@ -422,7 +422,7 @@ document.addEventListener('DOMContentLoaded', function () {
         clearInput();
         getTimeAndDate("time");
         break;
-
+ 
       case "date":
         clearInput();
         getTimeAndDate("date");
@@ -468,7 +468,7 @@ document.addEventListener('DOMContentLoaded', function () {
               clearInput();
               addTextToResults(" Congratulations just you found an Easter eggs, tag us on instagram  @frcrce to get reposted  ");
               break;
-       
+       3
 
               
 
@@ -481,10 +481,68 @@ document.addEventListener('DOMContentLoaded', function () {
  
                 case " dhruvi":
                   clearInput();
-                  addTextToResults(" CRMD BEST EVENT OF STUCO TILL");
+                  addTextToResults(" CRMD LITERAL BEST EVENT OF STUCO ");
                   break;
       
-   
+                  case "tanuj":
+                    case "Tanuj":
+                    clearInput();
+                    addTextToResults(" ME: KYA CHAHIYE?      TANUJ: LADKI");
+                    break;
+
+
+                    
+                  case "Sahil":
+                    case "sahil":
+                    clearInput();
+                    addTextToResults(" BHAI");
+                    break;
+
+
+                    case "Renu":
+                      case "renu":
+                      clearInput();
+                      addTextToResults(" TEDxCRCE WALE LOG  ");
+                      break;
+
+
+
+                      case "Samuel ":
+                      case " samuel":
+                      clearInput();
+                      addTextToResults(" CULT SEC ");
+                      break;
+ 
+
+
+                      case "Anthony ":
+                      case "anthony":
+                      clearInput();
+                      addTextToResults(" The GEN SEC of CRCE ");
+                      break;
+
+
+
+                      case "Sahil ":
+                        case " sahil":
+                        clearInput();
+                        addTextToResults(" BHAI ");
+                        break;
+
+
+                        
+                      case "Gaurav ":
+                        case " gaurav":
+                        clearInput();
+                        addTextToResults("  SE REP ");
+                        break;
+
+
+                        case "Riya ":
+                          case " riya":
+                          clearInput();
+                          addTextToResults("  Am everything u want but cant have ");
+                          break;
 
 
   case "fuck you":
