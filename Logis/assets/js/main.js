@@ -326,10 +326,10 @@ document.addEventListener('DOMContentLoaded', function () {
         addTextToResults(" SE Webmaster op");
         break;
 
-          case "Siddharth":
-          case "siddharth":
+          case "Anthony":
+          case "anthony":
               clearInput();
-              addTextToResults("ECS ki mummy meri hojaye");
+              addTextToResults("Gen?");
               break; 
 
       case "ecs":

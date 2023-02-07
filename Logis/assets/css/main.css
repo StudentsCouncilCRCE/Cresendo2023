@@ -3118,7 +3118,7 @@ background-color: #f0f8ff;
   align-items: flex-end;
   padding: 0 36px;
   perspective: 2500px;
-  margin: 0 50px;
+  margin: 45px 50px;
   backdrop-filter: blur(10px);
 }
 
@@ -3233,9 +3233,10 @@ background-color: #f0f8ff;
 /* landing hero  */
 
 @media screen and (max-width:420px){
-  .moblanding{
-    background: url( )
-  j
-  }
+  
+  
+}
+#events p{
+  color: white;
 }
 
