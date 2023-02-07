@@ -468,7 +468,10 @@ document.addEventListener('DOMContentLoaded', function () {
               clearInput();
               addTextToResults(" Congratulations just you found an Easter eggs, tag us on instagram  @frcrce to get reposted  ");
               break;
-  
+       
+
+              
+
 
               case " glass":
                 clearInput();
@@ -476,6 +479,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 break;
     
  
+                case " dhruvi":
+                  clearInput();
+                  addTextToResults(" CRMD BEST EVENT OF STUCO TILL");
+                  break;
+      
+   
+
+
   case "fuck you":
   clearInput();
         addTextToResults(" JO BOLTE WAHI HOTE");
