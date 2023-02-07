@@ -3228,6 +3228,17 @@ background-color: #f0f8ff;
   }
  
 }
+
+
+/* landing hero  */
+
+@media screen and (max-width:420px){
+  .moblanding{
+    background: url( )
+  j
+  }
+}
 #events p{
   color: white;
 }
+
