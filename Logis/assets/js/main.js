@@ -451,6 +451,30 @@ document.addEventListener('DOMContentLoaded', function () {
         break;
 
 
+
+        case "reflection":
+          clearInput();
+          addTextToResults(" Congratulations you just found an Easter eggs, tag us on instagram  @frcrce to get reposted  ");
+          break;
+
+
+          case " mirror":
+            clearInput();
+            addTextToResults(" Congratulations just you found an Easter eggs, tag us on instagram  @frcrce to get reposted  ");
+            break;
+
+
+            case " symmetry":
+              clearInput();
+              addTextToResults(" Congratulations just you found an Easter eggs, tag us on instagram  @frcrce to get reposted  ");
+              break;
+  
+
+              case " glass":
+                clearInput();
+                addTextToResults(" Congratulations you just found an Easter eggs, tag us on instagram  @frcrce to get reposted  ");
+                break;
+    
  
   case "fuck you":
   clearInput();
