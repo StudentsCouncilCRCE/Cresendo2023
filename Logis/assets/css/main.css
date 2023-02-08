@@ -3231,6 +3231,10 @@ background-color: #f0f8ff;
     margin-top: 60px;
     margin-bottom: 60px;
     width: 250px;
+    
+  }
+  .character{
+    height: 120%;
   }
   .fgship{
     margin-left: 120px;
