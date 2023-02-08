@@ -12,9 +12,7 @@
 /* Fonts */
 @import url(//db.onlinewebfonts.com/c/8cdbb48678e4418f22a2f507c2b975bd?family=Blanka);
 @font-face {font-family: "Blanka"; src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot"); src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff") format("woff"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.svg#Blanka") format("svg"); }
-/* @import url(//db.onlinewebfonts.com/c/9c6dbf46e0678b08c7288008c8df8691?family=Corrupted+File); */
-/* @font-face {font-family: "Corrupted File"; src: url("//db.onlinewebfonts.com/t/9c6dbf46e0678b08c7288008c8df8691.eot"); src: url("//db.onlinewebfonts.com/t/9c6dbf46e0678b08c7288008c8df8691.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9c6dbf46e0678b08c7288008c8df8691.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9c6dbf46e0678b08c7288008c8df8691.woff") format("woff"), url("//db.onlinewebfonts.com/t/9c6dbf46e0678b08c7288008c8df8691.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9c6dbf46e0678b08c7288008c8df8691.svg#Corrupted File") format("svg"); } */
-/* @import url(//db.onlinewebfonts.com/c/213b270879c39c60dab01a4bf5b51ba0?family=Distorter+Demo); */
+
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
@@ -64,7 +62,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-primary);
+  /* font-family: var(--font-primary); */
 }
 
 /*--------------------------------------------------------------
@@ -160,7 +158,7 @@ section {
   font-size: 56px;
   font-weight: 500;
   color: #fff;
-  font-family: var(--font-secondary);
+  /* font-family: var(--font-secondary); */
 }
 
 .breadcrumbs .page-header p {
@@ -381,7 +379,7 @@ section {
   margin: 0;
   font-weight: 700;
   color: #fff;
-  font-family: var(--font-primary);
+  /* font-family: var(--font-primary); */
 }
 
 /*--------------------------------------------------------------
@@ -410,7 +408,7 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 10px 0 10px 30px;
-    font-family: var(--font-primary);
+    /* font-family: var(--font-primary); */
     font-size: 16px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.6);
@@ -554,7 +552,7 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 12px 20px;
-    font-family: var(--font-primary);
+    /* font-family: var(--font-primary); */
     font-size: 16px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.7);
@@ -711,7 +709,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 32px;
-  font-family: var(--font-secondary);
+  /* font-family: var(--font-secondary); */
   color: #001f8d;
 }
 
@@ -924,7 +922,7 @@ section {
 }
 
 .call-to-action .cta-btn {
-  font-family: var(--font-primary);
+  /* font-family: var(--font-primary); */
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -1011,7 +1009,7 @@ section {
   font-size: 48px;
   color: var(--color-primary);
   font-weight: 400;
-  font-family: var(--font-primary);
+  /* font-family: var(--font-primary); */
   margin-bottom: 25px;
 }
 
@@ -1064,7 +1062,7 @@ section {
   transition: none;
   font-size: 16px;
   font-weight: 500;
-  font-family: var(--font-primary);
+  /* font-family: var(--font-primary); */
   transition: 0.3s;
   border: 1px solid var(--color-primary);
 }
@@ -1306,7 +1304,7 @@ section {
 .stats-counter .stats-item p {
   padding: 0;
   margin: 0;
-  font-family: var(--font-primary);
+  /* font-family: var(--font-primary); */
   font-size: 15px;
   font-weight: 500;
   color: var(--color-secondary);
@@ -1390,7 +1388,7 @@ section {
   font-size: 48px;
   color: var(--color-primary);
   font-weight: 400;
-  font-family: var(--font-primary);
+  /* font-family: var(--font-primary); */
   margin-bottom: 25px;
   text-align: center;
 }
@@ -1447,7 +1445,7 @@ section {
   font-size: 16px;
   font-weight: 500;
   transition: 0.3s;
-  font-family: var(--font-primary);
+  /* font-family: var(--font-primary); */
 }
 
 .horizontal-pricing .buy-btn:hover {
@@ -1907,7 +1905,7 @@ section {
 .hero .stats-item p {
   padding: 0;
   margin: 0;
-  font-family: var(--font-primary);
+  /* font-family: var(--font-primary); */
   font-size: 15px;
   font-weight: 600;
 }
@@ -1938,12 +1936,12 @@ section {
   font-weight: 700;
   letter-spacing: 1px;
   color: #fff;
-  font-family: var(--font-primary);
+  /* font-family: var(--font-primary); */
 }
 
 .footer .footer-info p {
   font-size: 14px;
-  font-family: var(--font-primary);
+  /* font-family: var(--font-primary); */
 }
 
 .footer .social-links a {
@@ -2039,7 +2037,7 @@ html {
   line-height: 1.5;
   font-weight: 300;
   color: #333;
-  font-family: "Nunito Sans", sans-serif;
+  /* font-family: "Nunito Sans", sans-serif; */
 }
 
 body {
@@ -2130,6 +2128,7 @@ body {
   position: relative;
   background-color: rgba(255, 255, 255, 0);
   backdrop-filter: blur(10px);
+  border-radius: 50px;
 }
 @media screen and (max-width: 800px) {
   .card {
@@ -2159,6 +2158,7 @@ body {
   transform-style: preserve-3d;
   transition: ease-in-out 600ms;
   backdrop-filter: blur(10px);
+  border-radius: 50px;
 }
 
 .front {
@@ -2168,8 +2168,10 @@ body {
   font-weight: 600;
   color: #fff;
   overflow: hidden;
-  font-family: Poppins, sans-serif;
+  /* font-family: Poppins, sans-serif; */
   backdrop-filter: blur(10px);
+  border-radius: 50px;
+  background-position-y: -45px;
 }
 .front:before {
   position: absolute;
@@ -2183,6 +2185,7 @@ body {
   opacity: 0.25;
   z-index: -1;
   backdrop-filter: blur(10px);
+  border-radius: 50px;
 }
 .card:hover .front {
   transform: rotateY(180deg);
@@ -2281,7 +2284,7 @@ body {
   border-radius: 4px;
   padding: 12px 0 0 0;
   margin-top: -20px;
-  font-family: "Roboto Mono", monospace;
+  /* font-family: "Roboto Mono", monospace; */
   opacity: 0;
   height: auto;
 
@@ -2329,7 +2332,7 @@ body {
   padding: 18px;
   font-size: 14px;
   outline: none;
-  font-family: "Roboto Mono", monospace;
+  /* font-family: "Roboto Mono", monospace; */
 }
 
 @-webkit-keyframes fadeInAnimation {
@@ -2518,7 +2521,7 @@ body {
 }
 
 .header {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
   text-align: center;
 }
 
@@ -2668,7 +2671,7 @@ body {
   display: grid;
   place-items: center;
   color: white;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
 }
 .red {
   color: rgb(255, 245, 245);
@@ -2827,11 +2830,12 @@ body {
 }
 h2.text_shadows {
   font-family: "Blanka", sans-serif;
+  font-family: "Space Grotesk",sans-serif;
 }
 .text_shadows {
   text-shadow: 3px 3px 0 var(--color-sec), 6px 6px 0 var(--color-tertiary),
     9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
-  font-family: bungee, sans-serif;
+  /* font-family: bungee, sans-serif; */
   font-weight: 400;
   text-transform: uppercase;
   font-size: calc(2rem + 3vw);
@@ -2905,7 +2909,7 @@ h2.text_shadows {
 }
 
 .section_header {
-  font-family: canada-type-gibson, sans-serif;
+  /* font-family: canada-type-gibson, sans-serif; */
 }
 
 /* maps  */
@@ -2915,6 +2919,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 #map_canvas {
@@ -3043,8 +3048,11 @@ background-color: #f0f8ff;
   text-align: center;
   /* margin-top: 50px; */
 }
+.front{
+  background-position-y: -45px;
+}
 .animate {
-  font: 700 5em/1 "Oswald", sans-serif;
+  font: 700 5em/1 "Space Grotesk", sans-serif;
   letter-spacing: 0;
   padding: 0.25em 0 0.325em;
   display: block;
@@ -3096,7 +3104,12 @@ background-color: #f0f8ff;
   ::-webkit-scrollbar-thumb:hover {
     background: #002e69;
   }
+  .front{
+    background-position-y: 0px;
+    background-position-x: -20px;
+  }
 }
+
 
 #cards3d {
   width: 100%;
@@ -3235,6 +3248,7 @@ background-color: #f0f8ff;
   }
   .character{
     height: 120%;
+    border-radius: 50px;
   }
   .fgship{
     margin-left: 120px;

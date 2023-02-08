@@ -452,40 +452,37 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-        case "reflection":
+    case "reflection":
           clearInput();
           addTextToResults(" Congratulations you just found an Easter eggs, tag us on instagram  @frcrce to get reposted  ");
           break;
 
-
-          case " mirror":
+    case " mirror":
             clearInput();
             addTextToResults(" Congratulations just you found an Easter eggs, tag us on instagram  @frcrce to get reposted  ");
             break;
 
 
-            case " symmetry":
+    case " symmetry":
               clearInput();
               addTextToResults(" Congratulations just you found an Easter eggs, tag us on instagram  @frcrce to get reposted  ");
               break;
-       3
+       
 
               
 
-
-              case " glass":
+   case " glass":
                 clearInput();
                 addTextToResults(" Congratulations you just found an Easter eggs, tag us on instagram  @frcrce to get reposted  ");
                 break;
     
- 
-                case " dhruvi":
+    case " dhruvi":
                   clearInput();
                   addTextToResults(" CRMD LITERAL BEST EVENT OF STUCO ");
                   break;
       
-                  case "tanuj":
-                    case "Tanuj":
+     case "tanuj":
+    case "Tanuj":
                     clearInput();
                     addTextToResults(" ");
                     break;
@@ -508,7 +505,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
                       case "Samuel ":
-                      case " samuel":
+                      case "samuel":
                       clearInput();
                       addTextToResults(" CULT SEC ");
                       break;
@@ -546,9 +543,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
                         case "Riya ":
-                          case " riya":
+                          case "riya":
                           clearInput();
-                          addTextToResults("  Am everything u want but cant have ");
+                          addTextToResults(" I am everything u want but cant have ");
                           break;
 
 
