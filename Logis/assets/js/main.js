@@ -438,7 +438,7 @@ document.addEventListener("DOMContentLoaded", function () {
       case "REFLECTION":
         clearInput();
         addTextToResults(
-          " Congratulations you just found an Easter eggs, tag us on instagram  @frcrce to get reposted  "
+          " Congratulations you just found an Easter egg, tag us on instagram  @frcrce to get reposted  "
         );
         break;
 
@@ -446,7 +446,7 @@ document.addEventListener("DOMContentLoaded", function () {
       case "MIRROR":
         clearInput();
         addTextToResults(
-          " Congratulations just you found an Easter eggs, tag us on instagram  @frcrce to get reposted  "
+          " Congratulations you just found an Easter egg, tag us on instagram  @frcrce to get reposted  "
         );
         break;
 
@@ -454,7 +454,7 @@ document.addEventListener("DOMContentLoaded", function () {
       case "SYMMETRY":
         clearInput();
         addTextToResults(
-          " Congratulations just you found an Easter eggs, tag us on instagram  @frcrce to get reposted  "
+          " Congratulations you just found an Easter egg, tag us on instagram  @frcrce to get reposted  "
         );
         break;
 
@@ -462,7 +462,7 @@ document.addEventListener("DOMContentLoaded", function () {
       case "KALEIDOSCOPE":
         clearInput();
         addTextToResults(
-          " Congratulations just you found an Easter eggs, tag us on instagram  @frcrce to get reposted  "
+          " Congratulations you just found an Easter egg, tag us on instagram  @frcrce to get reposted  "
         );
         break;
 
@@ -470,7 +470,7 @@ document.addEventListener("DOMContentLoaded", function () {
       case "GLASS":
         clearInput();
         addTextToResults(
-          " Congratulations you just found an Easter eggs, tag us on instagram  @frcrce to get reposted  "
+          " Congratulations you just found an Easter egg, tag us on instagram  @frcrce to get reposted  "
         );
         break;
 
