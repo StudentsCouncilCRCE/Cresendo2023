@@ -482,7 +482,7 @@ document.addEventListener("DOMContentLoaded", function () {
       case "tanuj":
       case "Tanuj":
         clearInput();
-        addTextToResults(" ");
+        addTextToResults("DESIGN HEAD ");
         break;
 
       case "Sahil":
