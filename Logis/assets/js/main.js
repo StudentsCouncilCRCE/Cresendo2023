@@ -298,11 +298,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-              case "tanuj":
-              case "Tanuj":
-              clearInput();
-              addTextToResults(" if girl==true  contact :7700007543 else contact type renu ");
-              break;
+              // case "tanuj":
+              // case "Tanuj":
+              // clearInput();
+              // addTextToResults(" if girl==true  contact :7700007543 else contact type renu ");
+              // break;
 
 
               case "farhan":
@@ -487,7 +487,7 @@ document.addEventListener('DOMContentLoaded', function () {
                   case "tanuj":
                     case "Tanuj":
                     clearInput();
-                    addTextToResults(" ME: KYA CHAHIYE?      TANUJ: LADKI");
+                    addTextToResults(" ");
                     break;
 
 
@@ -520,6 +520,13 @@ document.addEventListener('DOMContentLoaded', function () {
                       clearInput();
                       addTextToResults(" The GEN SEC of CRCE ");
                       break;
+
+
+                      case "Jeshu":
+                        case "jeshu":
+                        clearInput();
+                        addTextToResults(" King ");
+                        break;
 
 
 
