@@ -588,7 +588,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-<<<<<<< Updated upstream
 
 // // Set up the scene
 // var scene = new THREE.Scene();
@@ -633,8 +632,6 @@ document.addEventListener('DOMContentLoaded', function () {
 // // Render the scene
 // renderer.render( scene, camera );
 
-=======
->>>>>>> Stashed changes
 
 
 
