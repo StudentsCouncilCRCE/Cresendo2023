@@ -1,10 +1,10 @@
 /**
-* Template Name: Logis - v1.3.0
-* Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-document.addEventListener('DOMContentLoaded', () => {
+ * Template Name: Logis - v1.3.0
+ * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
+ * Author: BootstrapMade.com
+ * License: https://bootstrapmade.com/license/
+ */
+document.addEventListener("DOMContentLoaded", () => {
   "use strict";
 
   /**
@@ -18,12 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
   //   });
   // }
 
-
-
-
-  const preloader = document.querySelector('#preloader');
+  const preloader = document.querySelector("#preloader");
   if (preloader) {
-    window.addEventListener('load', () => {
+    window.addEventListener("load", () => {
       preloader.remove();
     });
   }
@@ -31,83 +28,88 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Sticky header on scroll
    */
-  const selectHeader = document.querySelector('#header');
+  const selectHeader = document.querySelector("#header");
   if (selectHeader) {
-    document.addEventListener('scroll', () => {
-      window.scrollY > 100 ? selectHeader.classList.add('sticked') : selectHeader.classList.remove('sticked');
+    document.addEventListener("scroll", () => {
+      window.scrollY > 100
+        ? selectHeader.classList.add("sticked")
+        : selectHeader.classList.remove("sticked");
     });
   }
 
   /**
    * Scroll top button
    */
-  const scrollTop = document.querySelector('.scroll-top');
+  const scrollTop = document.querySelector(".scroll-top");
   if (scrollTop) {
     const togglescrollTop = function () {
-      window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
-    }
-    window.addEventListener('load', togglescrollTop);
-    document.addEventListener('scroll', togglescrollTop);
-    scrollTop.addEventListener('click', window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    }));
+      window.scrollY > 100
+        ? scrollTop.classList.add("active")
+        : scrollTop.classList.remove("active");
+    };
+    window.addEventListener("load", togglescrollTop);
+    document.addEventListener("scroll", togglescrollTop);
+    scrollTop.addEventListener(
+      "click",
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      })
+    );
   }
 
   /**
    * Mobile nav toggle
    */
-  const mobileNavShow = document.querySelector('.mobile-nav-show');
-  const mobileNavHide = document.querySelector('.mobile-nav-hide');
+  const mobileNavShow = document.querySelector(".mobile-nav-show");
+  const mobileNavHide = document.querySelector(".mobile-nav-hide");
 
-  document.querySelectorAll('.mobile-nav-toggle').forEach(el => {
-    el.addEventListener('click', function (event) {
+  document.querySelectorAll(".mobile-nav-toggle").forEach((el) => {
+    el.addEventListener("click", function (event) {
       event.preventDefault();
       mobileNavToogle();
-    })
+    });
   });
 
   function mobileNavToogle() {
-    document.querySelector('body').classList.toggle('mobile-nav-active');
-    mobileNavShow.classList.toggle('d-none');
-    mobileNavHide.classList.toggle('d-none');
+    document.querySelector("body").classList.toggle("mobile-nav-active");
+    mobileNavShow.classList.toggle("d-none");
+    mobileNavHide.classList.toggle("d-none");
   }
 
   /**
    * Hide mobile nav on same-page/hash links
    */
-  document.querySelectorAll('#navbar a').forEach(navbarlink => {
-
+  document.querySelectorAll("#navbar a").forEach((navbarlink) => {
     if (!navbarlink.hash) return;
 
     let section = document.querySelector(navbarlink.hash);
     if (!section) return;
 
-    navbarlink.addEventListener('click', () => {
-      if (document.querySelector('.mobile-nav-active')) {
+    navbarlink.addEventListener("click", () => {
+      if (document.querySelector(".mobile-nav-active")) {
         mobileNavToogle();
       }
     });
-
   });
 
   /**
    * Toggle mobile nav dropdowns
    */
-  const navDropdowns = document.querySelectorAll('.navbar .dropdown > a');
+  const navDropdowns = document.querySelectorAll(".navbar .dropdown > a");
 
-  navDropdowns.forEach(el => {
-    el.addEventListener('click', function (event) {
-      if (document.querySelector('.mobile-nav-active')) {
+  navDropdowns.forEach((el) => {
+    el.addEventListener("click", function (event) {
+      if (document.querySelector(".mobile-nav-active")) {
         event.preventDefault();
-        this.classList.toggle('active');
-        this.nextElementSibling.classList.toggle('dropdown-active');
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("dropdown-active");
 
-        let dropDownIndicator = this.querySelector('.dropdown-indicator');
-        dropDownIndicator.classList.toggle('bi-chevron-up');
-        dropDownIndicator.classList.toggle('bi-chevron-down');
+        let dropDownIndicator = this.querySelector(".dropdown-indicator");
+        dropDownIndicator.classList.toggle("bi-chevron-up");
+        dropDownIndicator.classList.toggle("bi-chevron-down");
       }
-    })
+    });
   });
 
   /**
@@ -119,29 +121,29 @@ document.addEventListener('DOMContentLoaded', () => {
    * Initiate glightbox
    */
   const glightbox = GLightbox({
-    selector: '.glightbox'
+    selector: ".glightbox",
   });
 
   /**
    * Init swiper slider with 1 slide at once in desktop view
    */
-  new Swiper('.slides-1', {
+  new Swiper(".slides-1", {
     speed: 600,
     loop: true,
     autoplay: {
       delay: 5000,
-      disableOnInteraction: false
+      disableOnInteraction: false,
     },
-    slidesPerView: 'auto',
+    slidesPerView: "auto",
     pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
+      el: ".swiper-pagination",
+      type: "bullets",
+      clickable: true,
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   });
 
   /**
@@ -150,58 +152,59 @@ document.addEventListener('DOMContentLoaded', () => {
   function aos_init() {
     AOS.init({
       duration: 1000,
-      easing: 'ease-in-out',
+      easing: "ease-in-out",
       once: true,
-      mirror: false
+      mirror: false,
     });
   }
-  window.addEventListener('load', () => {
+  window.addEventListener("load", () => {
     aos_init();
   });
-
 });
-
-
 
 // terminal//
 
-document.addEventListener('DOMContentLoaded', function () {
-
-  document.getElementsByTagName('form')[0].onsubmit = function (evt) {
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementsByTagName("form")[0].onsubmit = function (evt) {
     evt.preventDefault();
     checkWord();
     // window.scrollTo(0, 150);
-  }
+  };
 
   // document.getElementById('terminalTextInput').focus();
 
-  var textInputValue = document.getElementById('terminalTextInput').value.trim();
+  var textInputValue = document
+    .getElementById("terminalTextInput")
+    .value.trim();
 
-  var textResultsValue = document.getElementById('terminalReslutsCont').innerHTML;
+  var textResultsValue = document.getElementById(
+    "terminalReslutsCont"
+  ).innerHTML;
 
   var clearInput = function () {
-    document.getElementById('terminalTextInput').value = "";
-  }
+    document.getElementById("terminalTextInput").value = "";
+  };
 
   var scrollToBottomOfResults = function () {
-    var terminalResultsDiv = document.getElementById('terminalReslutsCont');
+    var terminalResultsDiv = document.getElementById("terminalReslutsCont");
     terminalResultsDiv.scrollTop = terminalResultsDiv.scrollHeight;
-  }
+  };
 
   scrollToBottomOfResults();
 
   var addTextToResults = function (textToAdd) {
-    document.getElementById('terminalReslutsCont').innerHTML += "<p>" + textToAdd + "</p>";
+    document.getElementById("terminalReslutsCont").innerHTML +=
+      "<p>" + textToAdd + "</p>";
     scrollToBottomOfResults();
-  }
+  };
 
   var postHelpList = function () {
     var helpKeyWords = [
-
       // "- Register + Hackathon / Mechathon / Elexathon ",
       // "- 'Time'Live time",
       // "- 'Date' ",
       "Welcome User ",
+      "Type the number corresponding to the question to know more",
       "1) What is Crescendo?",
       "2) Is it an inter-college Event?",
       "3) What is the location of the events? ",
@@ -210,9 +213,9 @@ document.addEventListener('DOMContentLoaded', function () {
       "6) Where to register?",
       "7) Will it be fun?",
       "* There are many easter eggs on this terminal, find,tag and follow us on Instagram at @frcrce_official ;",
-    ].join('<br>');
+    ].join("<br>");
     addTextToResults(helpKeyWords);
-  }
+  };
 
   var getTimeAndDate = function (postTimeDay) {
     var timeAndDate = new Date();
@@ -240,85 +243,82 @@ document.addEventListener('DOMContentLoaded', function () {
     if (postTimeDay == "date") {
       addTextToResults(currentDate);
     }
-  }
+  };
 
   var openLinkInNewWindow = function (linkToOpen) {
-    window.open(linkToOpen, '_blank');
+    window.open(linkToOpen, "_blank");
     clearInput();
-  }
+  };
 
   var textReplies = function () {
     switch (textInputValueLowerCase) {
-
       case "1":
         clearInput();
-        addTextToResults("Crescendo is the annual technical festival of Fr. Conceicao Rodrigues College of Engineering. It is an inter college event with events ranging from Hackathon, Mechathon, Elexathon to Coding Competitions, Entrepreneurship, etc.");
+        addTextToResults(
+          "Crescendo is the annual technical festival of Fr. Conceicao Rodrigues College of Engineering. It is an inter college event with events ranging from Hackathon, Mechathon, Elexathon to Coding Competitions, Entrepreneurship, etc."
+        );
 
         break;
-
 
       case "2":
         clearInput();
-        addTextToResults("Yes, Crescendo is an inter-collegiate event....Get your friends along! ");
+        addTextToResults(
+          "Yes, Crescendo is an inter-collegiate event....Get your friends along! "
+        );
         break;
-
 
       case "3":
         clearInput();
-        addTextToResults("Different events have different venues, you will be notified about your venues in the event brochure!");
+        addTextToResults(
+          "Different events have different venues, you will be notified about your venues in the event brochure!"
+        );
         break;
-
-
-
 
       case "4":
         clearInput();
-        addTextToResults("The Technical Amalgamation - CRESCENDO is spanned over 4 days, 9th March to 12th March");
+        addTextToResults(
+          "The Technical Amalgamation - CRESCENDO is spanned over 4 days, 9th March to 12th March"
+        );
         break;
-
-
-
 
       case "5":
         clearInput();
-        addTextToResults("Yes, the events do have a registeration fee of nominal cost");
+        addTextToResults(
+          "Yes, the events do have a registeration fee of nominal cost"
+        );
         break;
 
       case "6":
         clearInput();
-        addTextToResults("Register for any event right here on the amazing website :)");
+        addTextToResults(
+          "Register for any event right here on the amazing website :)"
+        );
         break;
 
+      case "7":
+        clearInput();
+        addTextToResults(
+          " Come along with your Kaleidoscopes and watch out for yourselves!"
+        );
+        break;
 
-              case "7":
-              clearInput();
-              addTextToResults(" Come along with your Kaleidoscopes and watch out for yourselves!");
-              break;
+      // case "tanuj":
+      // case "Tanuj":
+      // clearInput();
+      // addTextToResults(" if girl==true  contact :7700007543 else contact type renu ");
+      // break;
 
+      case "farhan":
+      case "Farhan":
+        clearInput();
+        addTextToResults("Tuta hua saaz hu mein");
+        break;
 
-
-
-              // case "tanuj":
-              // case "Tanuj":
-              // clearInput();
-              // addTextToResults(" if girl==true  contact :7700007543 else contact type renu ");
-              // break;
-
-
-              case "farhan":
-              case "Farhan":
-              clearInput();
-              addTextToResults("Tuta hua saaz hu mein");
-              break;
-
-
-
-
-          case "vignesh":
-          case "Vignesh":
-              clearInput();
-              addTextToResults("Webmaster OP");
-              break;
+      case "vignesh":
+      case "Vignesh":
+        clearInput();
+        addTextToResults("Webmaster OP");
+        break;
 
       case "chris":
       case "chris gracias":
@@ -326,15 +326,9 @@ document.addEventListener('DOMContentLoaded', function () {
         addTextToResults(" SE Webmaster op");
         break;
 
-          case "Anthony":
-          case "anthony":
-              clearInput();
-              addTextToResults("Gen?");
-              break; 
-
       case "ecs":
         clearInput();
-        addTextToResults(" Goooo ECS");
+        addTextToResults(" Go ECS");
         break;
 
       case "prod":
@@ -354,10 +348,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
       case "dates":
         clearInput();
-        addTextToResults("9th March - 13th March");
+        addTextToResults("9th March - 12th March");
         break;
-
-
 
       case "mech":
         clearInput();
@@ -384,45 +376,42 @@ document.addEventListener('DOMContentLoaded', function () {
         addTextToResults("G.O.A.T");
         break;
 
-
       case "ryan":
         clearInput();
         addTextToResults("G.O.A.T ULTRA PRO MAX 🐐 ");
         break;
 
-
       case "i love you":
       case "love you":
       case "love":
         clearInput();
-        addTextToResults("Aww! That's so sweet 😍. Here's some love for you too ❤ ❤ ❤ !");
-        break; 
-
-
-
+        addTextToResults(
+          "Aww! That's so sweet 😍. Here's some love for you too ❤ ❤ ❤ !"
+        );
+        break;
 
       case "rick":
       case "rick roll":
       case "rickroll":
       case "do me a rickroll":
-      
         clearInput();
-        addTextToResults(':)');
-        openLinkInNewWindow('https://youtu.be/dQw4w9WgXcQ');
+        addTextToResults(":)");
+        openLinkInNewWindow("https://youtu.be/dQw4w9WgXcQ");
         break;
 
       case "hello":
       case "hi":
-
         clearInput();
-        addTextToResults("Hey there user, Welcome to Crescendo 2023...💫.Type Help for more information  ")
+        addTextToResults(
+          "Hey there user, Welcome to Crescendo 2023...💫.Type Help for more information  "
+        );
         break;
 
       case "time":
         clearInput();
         getTimeAndDate("time");
         break;
- 
+
       case "date":
         clearInput();
         getTimeAndDate("date");
@@ -434,157 +423,157 @@ document.addEventListener('DOMContentLoaded', function () {
         postHelpList();
         break;
 
-
-
-
       case "stuco rocks":
       case "stuco":
         clearInput();
         addTextToResults("STUCO ROCKS !!");
         break;
 
-
       case "ishan":
-
         clearInput();
         addTextToResults("hello");
         break;
 
+      case "reflection":
+      case "REFLECTION":
+        clearInput();
+        addTextToResults(
+          " Congratulations you just found an Easter egg, tag us on instagram  @frcrce to get reposted  "
+        );
+        break;
 
+      case "mirror":
+      case "MIRROR":
+        clearInput();
+        addTextToResults(
+          " Congratulations you just found an Easter egg, tag us on instagram  @frcrce to get reposted  "
+        );
+        break;
 
-    case "reflection":
-          clearInput();
-          addTextToResults(" Congratulations you just found an Easter eggs, tag us on instagram  @frcrce to get reposted  ");
-          break;
+      case "symmetry":
+      case "SYMMETRY":
+        clearInput();
+        addTextToResults(
+          " Congratulations you just found an Easter egg, tag us on instagram  @frcrce to get reposted  "
+        );
+        break;
 
-    case " mirror":
-            clearInput();
-            addTextToResults(" Congratulations just you found an Easter eggs, tag us on instagram  @frcrce to get reposted  ");
-            break;
+      case "kaleidoscope":
+      case "KALEIDOSCOPE":
+        clearInput();
+        addTextToResults(
+          " Congratulations you just found an Easter egg, tag us on instagram  @frcrce to get reposted  "
+        );
+        break;
 
+      case "glass":
+      case "GLASS":
+        clearInput();
+        addTextToResults(
+          " Congratulations you just found an Easter egg, tag us on instagram  @frcrce to get reposted  "
+        );
+        break;
 
-    case " symmetry":
-              clearInput();
-              addTextToResults(" Congratulations just you found an Easter eggs, tag us on instagram  @frcrce to get reposted  ");
-              break;
-       
+      case "dhruvi":
+        clearInput();
+        addTextToResults(" CRMD - THE BEST LITERARY EVENT OF STUCO ");
+        break;
 
-              
+      case "tanuj":
+      case "Tanuj":
+        clearInput();
+        addTextToResults("DESIGN HEAD ");
+        break;
 
-   case " glass":
-                clearInput();
-                addTextToResults(" Congratulations you just found an Easter eggs, tag us on instagram  @frcrce to get reposted  ");
-                break;
-    
-    case " dhruvi":
-                  clearInput();
-                  addTextToResults(" CRMD LITERAL BEST EVENT OF STUCO ");
-                  break;
-      
-     case "tanuj":
-    case "Tanuj":
-                    clearInput();
-                    addTextToResults(" ");
-                    break;
+      case "Sahil":
+      case "sahil":
+        clearInput();
+        addTextToResults(" BHAI");
+        break;
 
+      case "Renu":
+      case "renu":
+        clearInput();
+        addTextToResults(" TEDxCRCE WALE LOG  ");
+        break;
 
-                    
-                  case "Sahil":
-                    case "sahil":
-                    clearInput();
-                    addTextToResults(" BHAI");
-                    break;
+      case "Samuel ":
+      case "samuel":
+        clearInput();
+        addTextToResults(" CULT SEC ");
+        break;
 
+      case "Anthony":
+      case "anthony":
+        clearInput();
+        addTextToResults(" The GEN SEC of CRCE ");
+        break;
 
-                    case "Renu":
-                      case "renu":
-                      clearInput();
-                      addTextToResults(" TEDxCRCE WALE LOG  ");
-                      break;
+      case "Jeshu":
+      case "jeshu":
+        clearInput();
+        addTextToResults(" King ");
+        break;
 
+      case "Sahil ":
+      case " sahil":
+        clearInput();
+        addTextToResults(" BHAI ");
+        break;
 
+      case "Gaurav ":
+      case " gaurav":
+        clearInput();
+        addTextToResults("  SE REP ");
+        break;
 
-                      case "Samuel ":
-                      case "samuel":
-                      clearInput();
-                      addTextToResults(" CULT SEC ");
-                      break;
- 
+      case "Riya ":
+      case "riya":
+        clearInput();
+        addTextToResults(" I am everything u want but cant have ");
+        break;
 
-
-                      case "Anthony ":
-                      case "anthony":
-                      clearInput();
-                      addTextToResults(" The GEN SEC of CRCE ");
-                      break;
-
-
-                      case "Jeshu":
-                        case "jeshu":
-                        clearInput();
-                        addTextToResults(" King ");
-                        break;
-
-
-
-                      case "Sahil ":
-                        case " sahil":
-                        clearInput();
-                        addTextToResults(" BHAI ");
-                        break;
-
-
-                        
-                      case "Gaurav ":
-                        case " gaurav":
-                        clearInput();
-                        addTextToResults("  SE REP ");
-                        break;
-
-
-                        case "Riya ":
-                          case "riya":
-                          clearInput();
-                          addTextToResults(" I am everything u want but cant have ");
-                          break;
-
-
-  case "fuck you":
-  clearInput();
+      case "fuck you":
+        clearInput();
         addTextToResults(" JO BOLTE WAHI HOTE");
         break;
 
-
       default:
         clearInput();
-        addTextToResults("<p><i>The command  " + "<b>" + textInputValue + "</b>" + " was not found . Type <b>Help</b> to see all commands.</i></p>");
+        addTextToResults(
+          "<p><i>The command  " +
+            "<b>" +
+            textInputValue +
+            "</b>" +
+            " was not found . Type <b>Help</b> to see all commands.</i></p>"
+        );
         break;
     }
-  }
+  };
 
   var checkWord = function () {
-    textInputValue = document.getElementById('terminalTextInput').value.trim();
+    textInputValue = document.getElementById("terminalTextInput").value.trim();
     textInputValueLowerCase = textInputValue.toLowerCase();
 
     if (textInputValue != "") {
-      addTextToResults("<p class='userEnteredText'>> " + textInputValue + "</p>");
+      addTextToResults(
+        "<p class='userEnteredText'>> " + textInputValue + "</p>"
+      );
       if (textInputValueLowerCase.substr(0, 9) == "register ") {
-        openLinkInNewWindow('/register-' + textInputValueLowerCase.substr(9));
-        addTextToResults("<i>The Registration link for " + "<b>" + textInputValue.substr(9) + "</b>" + " should be opened now.</i>");
+        openLinkInNewWindow("/register-" + textInputValueLowerCase.substr(9));
+        addTextToResults(
+          "<i>The Registration link for " +
+            "<b>" +
+            textInputValue.substr(9) +
+            "</b>" +
+            " should be opened now.</i>"
+        );
       } else {
         textReplies();
       }
     }
   };
-
 });
-
-
-
-
-
-
-
 
 // // Set up the scene
 // var scene = new THREE.Scene();
@@ -595,7 +584,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // // Create the kaleidoscope geometry
 // var geometry = new THREE.TorusKnotGeometry( 10, 3, 100, 16 );
-
 
 // // Create a material to give the kaleidoscope a reflective surface
 // var material = new THREE.MeshStandardMaterial( {
@@ -628,16 +616,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // // Render the scene
 // renderer.render( scene, camera );
-
-
-
-
-
-
-
-
-
-
-
-
-
