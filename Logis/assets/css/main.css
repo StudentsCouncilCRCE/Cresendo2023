@@ -2821,7 +2821,7 @@ i.fa {
 }
 
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 :root {
