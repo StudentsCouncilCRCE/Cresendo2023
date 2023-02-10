@@ -313,6 +313,28 @@ document.addEventListener("DOMContentLoaded", function () {
         addTextToResults("Webmaster OP");
         break;
 
+
+
+        case "Harsh":
+          case " harsh":
+            clearInput();
+            addTextToResults("Stuco Webteam 🧑‍💻💻");
+            break;
+
+
+            case "Seanne":
+          case " seanne":
+            clearInput();
+            addTextToResults("Stuco Webteam 🧑‍💻💻");
+            break;
+
+
+            case "Khushi":
+              case " Khushi":
+                clearInput();
+                addTextToResults("Stuco Webteam 🧑‍💻💻");
+                break;
+
       case "chris":
       case "chris gracias":
         clearInput();
