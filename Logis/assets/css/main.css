@@ -3366,3 +3366,12 @@ background-color: #f0f8ff;
   vertical-align: middle;
   
 }
+.move{
+  margin-left: 30px;
+}
+
+@media screen and (max-width:420px){
+  .move{
+    margin-left: 20px;
+  }
+}
