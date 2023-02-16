@@ -243,7 +243,7 @@ section {
   inset: 0;
   z-index: 999999;
   overflow: hidden;
-  background: url("/Logis/assets/img/CRESCENDO\ PRELOADER.gif") center;
+  background: url("/Logis/assets/img/prepre.gif") center;
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.6s;
