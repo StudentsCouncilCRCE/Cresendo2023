@@ -11,7 +11,7 @@
 --------------------------------------------------------------*/
 /* Fonts */
 @import url(//db.onlinewebfonts.com/c/8cdbb48678e4418f22a2f507c2b975bd?family=Blanka);
-@font-face {font-family: "Blanka"; src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot"); src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff") format("woff"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.svg#Blanka") format("svg"); }
+/* @font-face {font-family: "Blanka"; src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot"); src: url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff") format("woff"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.svg#Blanka") format("svg"); } */
 
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
