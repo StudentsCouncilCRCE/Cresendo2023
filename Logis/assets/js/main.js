@@ -390,6 +390,11 @@ document.addEventListener("DOMContentLoaded", function () {
         clearInput();
         addTextToResults("G.O.A.T");
         break;
+      case "rianna":
+      case "Rianna":
+        clearInput();
+        addTextToResults("Crescendo ka grid maine banaya");
+        break;
 
       case "ryan":
         clearInput();
