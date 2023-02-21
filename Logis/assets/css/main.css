@@ -243,7 +243,7 @@ section {
   inset: 0;
   z-index: 999999;
   overflow: hidden;
-  background: url("/Logis/assets/img/prepre.gif") center;
+  background: url("/Logis/assets/img/prepre\ \(1\).gif") center;
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.6s;
@@ -1163,13 +1163,7 @@ section {
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
-.testimonials {
-  padding: 80px 0;
-  background: url("../img/testimonials-bg.jpg") no-repeat;
-  background-position: center center;
-  background-size: cover;
-  position: relative;
-}
+
 
 .testimonials::before {
   content: "";
@@ -2044,15 +2038,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  /* background: url(/Logis/assets/img/Crescendo\ bg.png); */
-  /* background: url(https://cdnb.artstation.com/p/assets/covers/images/006/950/233/large/arturo-james-ice-planet-3-arturo-james.jpg?1502486660); */
-  /* background: url(https://e0.pxfuel.com/wallpapers/388/917/desktop-wallpaper-broken-glass-all-superior-broken-glass-background-blue-glass.jpg); */
-  /* background: url(https://wallpaperaccess.com/full/6486519.jpg); */
-  /* background: url(https://w0.peakpx.com/wallpaper/788/568/HD-wallpaper-cracked-abstract-blue-broken-glass-phone-screen-thumbnail.jpg); */
-  /* background: url(https://images.unsplash.com/photo-1542661206-03e9001692de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NHx8fGVufDB8fHx8&w=1000&q=80); */
-  /* background: url(https://wallpapers-hub.art/wallpaper-images/695406.jpg); */
-  /* background: url(/Logis/assets/img/Crescendo\ bg.png); */
-  background: url(/Logis/assets/img/bg\ crescdo.png);
+  background: url(/Logis/assets/img/bg\ crescdo-min.png);
   background-attachment: fixed;
   /* background-position:bottom; */
   background-repeat: no-repeat;
@@ -3064,7 +3050,7 @@ background-color: #f0f8ff;
 
   /* Clip Background Image */
 
-  background: url(../img/Cres\ Flow\ -\ 1\ -\ Edited.png) repeat-y;
+  background: url(../img/Cres\ Flow\ -\ 1\ -\ Edited-min.png) repeat-y;
   -webkit-background-clip: text;
   background-clip: text;
 
